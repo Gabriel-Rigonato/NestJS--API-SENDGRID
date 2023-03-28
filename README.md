@@ -1,3 +1,5 @@
+Olá Dev! Nesse pequeno projeto, decidi estudar um pouco sobre Nest.JS, e também sobre o consumo de API's de terceiros, com isso fiz um create básico de usúarios no banco de dados utilizando Prisma e para fazer a integração com uma API de fora, utilizei a API de emails SendGrid, pois diferente da ViaCEP ela também utiliza variáveis de ambiente no .env 😄! É simples mas espero que gostem.
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
