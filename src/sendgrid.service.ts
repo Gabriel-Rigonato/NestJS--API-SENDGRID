@@ -19,8 +19,8 @@ export default class AppService {
           to: email,
           from: process.env.FROM_EMAIL,
           subject: "Aqui é o teste final",
-          text: "Mostrando um email de qualidade que chegou através da API sendGrid para o neto da vovó sensei",
-          html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+          text: "Teste de email",
+          html: "<strong> `Hello Dev, Api de terceirizada chegou ! ;D `</strong>",
         });
       }
     } 
