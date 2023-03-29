@@ -14,7 +14,7 @@ export class AppController {
     private readonly appService: AppService) { }
 
   @Post()
-  async getHello(@Body() IRequest: IRequest): Promise<any> {
+  async createUser(@Body() IRequest: IRequest): Promise<any> {
 
 
     const { name, email, password } = IRequest;
