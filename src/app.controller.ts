@@ -8,7 +8,7 @@ import AppService from './sendgrid.service';
 
 const prisma = new PrismaClient();
 
-@Controller('teste')
+@Controller('controller')
 export class AppController {
   constructor(private readonly createService: CreateService,
     private readonly appService: AppService) { }
