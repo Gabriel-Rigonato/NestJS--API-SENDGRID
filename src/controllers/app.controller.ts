@@ -1,10 +1,10 @@
 import { Body, Controller, Get, Post, Res } from '@nestjs/common';
 import { response } from 'express';
-import { AppService as CreateService } from './app.service';
-import IRequest from './interface.controller';
+import { AppService as CreateService } from '../services/app.service';
+import IRequest from './interface/interface.controller';
 import { PrismaClient } from '@prisma/client';
 import { SendGridService } from '@anchan828/nest-sendgrid/dist/sendgrid.service';
-import AppService from './sendgrid.service';
+import AppService from '../services/sendgrid.service';
 
 const prisma = new PrismaClient();
 
@@ -30,6 +30,6 @@ export class AppController {
     
     const { name, email } = IRequest;
 
-    await this.appService.root(email, name)
+    await this.appService.root(email, name);
   }
 }
