@@ -1,17 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, user } from '@prisma/client';
+import IRequest from 'src/shared/interfaces/interface.controller';
 
 const prisma = new PrismaClient();
 
-interface IRequest {
-  name: string;
-  email: string;
-  password: string;
-}
-
 @Injectable()
-export class AppService {
-  async create({name, email, password} : IRequest): Promise<any> {
+export class UserService {
+  async create({name, email, password} : IRequest): Promise<user> {
      
      const user = await prisma.user.create({
       data:{
